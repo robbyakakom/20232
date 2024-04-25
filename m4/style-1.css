@@ -1,0 +1,74 @@
+h2 {
+    color: blue;
+    text-align:center;
+    border-width: 3px;
+    border-style:double;
+    border-color: #77045a ;
+    padding: 10px;
+    margin: 20px;
+
+    /* tiga cara penentuan warna */
+    /**
+    menyebutkan warna : red, blue, white
+    #rrggbb : #ffffff, #ff0000, #f00 ;#0f0
+    rgb(r,g,b); rgb(225, 0, 0)
+    **/
+
+}
+
+#satu {
+    /* border: width style color ; */
+    border: 5px groove red;
+    /**
+    padding-top : 5px;
+    padding-bottom: 10px;
+    **/
+    /* padding: atas kanan bawah kiri */
+    padding: 5px 10px 15px 20px;
+}
+
+a { 
+    margin: 22px;
+    padding: 5px;
+    border: thin solid red;
+    display: block;
+}
+
+a:hover{
+    font-size: 15px;
+}
+
+.baris {
+    background-color: aqua;
+    padding: 10px;
+}
+.label{
+    font-weight: 700;
+}
+.isi{
+    color:#77045a;
+    background-color: white;
+}
+
+p:hover{
+    background-color: black;
+    color: white;
+}
+
+#teks{
+    height: 100px;
+    overflow: scroll;
+}
+
+@media print {
+    h2 {
+        color: black;
+        
+    }
+}
+
+#kartu {
+    position: absolute;
+    width: 500px;
+    left:200px;
+}

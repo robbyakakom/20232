@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+    <style>
+        label {
+            background-color: green;
+            color: orange;
+            padding: 0px 10px;
+        }
+        input, textarea, option {
+            color: blue;
+        }
+        form {
+            width:500px;
+            margin: auto;
+            padding: 25px;
+            background-color: aqua;
+        }
+        h2 {
+            text-decoration: underline;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="tampilkan.php" method="post">
+        <h2>FORMULIR BIODATA</h2>
+        <label for="nim">NIM</label> <br>
+        <input type="text" name="nim" id="nim" maxlength="11" size="15" placeholder="Isi NIM Anda"> <br>
+        <br>
+        <label for="nama">Nama Mahasiswa</label> <br>
+        <input type="text" name="nama" id="nama" maxlength="50" size="50" placeholder="Isi Nama Mahasiswa Anda"> <br>
+        <br>
+        <label for="jenis_kelamin">Jenis Kelamin</label> <br>
+        <input type="radio" name="jenis_kelamin" id="jk-l" value="Laki-laki" checked> <label for="jk-l">Laki-laki</label> <br>
+        <input type="radio" name="jenis_kelamin" id="jk-p" value="Perempuan"> <label for="jk-p">Perempuan</label> <br>
+        <br>
+        <label for="agama">Agama</label> <br>
+        <select name="agama" id="agama">
+            <option value="" selected>Pilih</option>
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Budha</option>
+            <option value="Konghuchu">Konghuchu</option>
+            <option value="Kepercayaan">Kepercayaan</option>
+        </select> <br>
+        <br>
+        <label for="hobi">Hobi</label> <br>
+        <input type="checkbox" name="masak" id="masak"> <label for="masak">Masak</label>
+        <input type="checkbox" name="bola" id="bola"> <label for="bola">Main Bola</label>
+        <input type="checkbox" name="belanja" id="belanja"> <label for="belanja">Belanja</label>
+        <input type="checkbox" name="wisata" id="wisata"> <label for="wisata">Wisata</label>
+        <input type="checkbox" name="lain" id="lain" checked> <label for="lain">Lain-lain</label> <br>
+        <br>
+        <label for="alamat">Alamat</label> <br>
+        <textarea name="alamat" id="alamat" cols="50" rows="4" placeholder="Isi Alamat Anda"></textarea> <br>
+        <br>
+        <input type="reset" value="BATAL"> 
+        <input type="submit" value="SIMPAN"><br>
+        <br>
+    </form>
+</body>
+</html>
